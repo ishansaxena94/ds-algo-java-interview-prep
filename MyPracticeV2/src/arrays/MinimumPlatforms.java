@@ -4,10 +4,12 @@ import java.util.Arrays;
 
 public class MinimumPlatforms {
 
+	// arr: arrival
 	static int findNumOfPlatform(int arr[], int dep[]) {
 
 		int count = 0, maxCount = 0;
 
+		// Sort arrival and departure arrays
 		Arrays.sort(arr);
 		Arrays.parallelSort(dep);
 
@@ -16,7 +18,7 @@ public class MinimumPlatforms {
 
 			while (i < arr.length && arr[i] <= dep[j]) {
 				count++;
-				if (count > maxCount)
+				if (count > maxCount) // use Math.max instead
 					maxCount = count;
 				i++;
 			}
@@ -33,7 +35,7 @@ public class MinimumPlatforms {
 		return maxCount;
 	}
 
-	// Returns minimum number of platforms reqquired
+	// Returns minimum number of platforms required - GFG
 	static int findPlatform(int arr[], int dep[], int n) {
 		// Sort arrival and departure arrays
 		Arrays.sort(arr);

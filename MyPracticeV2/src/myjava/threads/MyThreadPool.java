@@ -8,7 +8,7 @@ public class MyThreadPool {
 	private final int capacity;
 	private final WorkerThread[] threads;
 	private BlockingQueue<Runnable> queue;
-	static Object lock;
+	static volatile Object lock;
 
 	public MyThreadPool(int size) {
 		capacity = size;

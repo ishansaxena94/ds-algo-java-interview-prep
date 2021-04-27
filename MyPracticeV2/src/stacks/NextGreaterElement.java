@@ -40,7 +40,6 @@ public class NextGreaterElement {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		int arr[] = { 11, 13, 21, 3 };
 		int arr2[] = { 4, 5, 2, 25 };

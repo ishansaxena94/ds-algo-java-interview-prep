@@ -18,7 +18,6 @@ public class MaxNumFromKSwaps {
 			return;
 
 		int len = num.length;
-
 		char maxCh = num[ctr];
 
 		// find max number character

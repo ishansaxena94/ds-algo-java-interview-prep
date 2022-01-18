@@ -1,7 +1,5 @@
 package trees;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
@@ -546,10 +544,8 @@ public class BinaryTree {
 	}
 
 	// 8. Max Sum Path 2 - Find the maximum sum leaf to root path in a Binary Tree
-	// A utility function to find the maximum sum between any
-	// two leaves.This function calculates two values:
-	// 1) Maximum path sum between two leaves which is stored
-	//    in res.
+	// A utility function to find the maximum sum between any two leaves.This function calculates two values:
+	// 1) Maximum path sum between two leaves which is stored in res.
 	// 2) The maximum root to leaf path sum which is returned.
 	// If one side of root is empty, then it returns INT_MIN
 	private int maxSumPathBw2LeafUtil(Node node){
